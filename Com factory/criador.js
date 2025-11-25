@@ -4,7 +4,7 @@ class NotificationCreator {
   }
 
   send(message) {
-    const notifier = this.createNotifier(); // Factory Method
+    const notifier = this.createNotifier();
     notifier.send(message);
   }
 }

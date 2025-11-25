@@ -1,4 +1,3 @@
-// Produtos concretos
 class EmailNotification {
   send(message) {
     console.log(`Enviando EMAIL: ${message}`);
@@ -17,7 +16,6 @@ class PushNotification {
   }
 }
 
-// Código que decide o tipo e instancia diretamente
 function sendNotification(type, message) {
   let notifier;
 
@@ -34,7 +32,6 @@ function sendNotification(type, message) {
   notifier.send(message);
 }
 
-// Uso
 sendNotification("email", "Olá usuário!");
 sendNotification("sms", "Seu código é 1234");
 sendNotification("push", "Você ganhou XP!");
