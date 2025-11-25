@@ -25,7 +25,6 @@ class Teacher {
   }
 }
 
-// Criando usuários SEM factory
 const user1 = new Admin("Carlos", "carlos@example.com");
 const user2 = new Student("Ana", "ana@example.com");
 const user3 = new Teacher("Marcos", "marcos@example.com");

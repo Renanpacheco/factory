@@ -25,7 +25,6 @@ class Teacher {
   }
 }
 
-// FACTORY
 class UserFactory {
   static createUser(type, name, email) {
     const types = {
@@ -44,7 +43,6 @@ class UserFactory {
   }
 }
 
-// Criando usuários COM factory
 const user1 = UserFactory.createUser("admin", "Carlos", "carlos@example.com");
 const user2 = UserFactory.createUser("student", "Ana", "ana@example.com");
 const user3 = UserFactory.createUser("teacher", "Marcos", "marcos@example.com");
