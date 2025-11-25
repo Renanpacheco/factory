@@ -8,3 +8,5 @@ class NotificationCreator {
     notifier.send(message);
   }
 }
+
+module.exports = NotificationCreator;

@@ -1,3 +1,10 @@
+const NotificationCreator = require("./criador");
+const {
+  EmailNotification,
+  SMSNotification,
+  PushNotification,
+} = require("./produto");
+
 class EmailNotificationCreator extends NotificationCreator {
   createNotifier() {
     return new EmailNotification();
@@ -15,3 +22,9 @@ class PushNotificationCreator extends NotificationCreator {
     return new PushNotification();
   }
 }
+
+module.exports = {
+  EmailNotificationCreator,
+  SMSNotificationCreator,
+  PushNotificationCreator,
+};

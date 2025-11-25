@@ -1,3 +1,9 @@
+const {
+  EmailNotificationCreator,
+  SMSNotificationCreator,
+  PushNotificationCreator,
+} = require("./criadorConcreto");
+
 const emailFactory = new EmailNotificationCreator();
 emailFactory.send("Olá usuário!");
 

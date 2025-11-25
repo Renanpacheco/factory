@@ -15,3 +15,9 @@ class PushNotification {
     console.log(`Enviando PUSH: ${message}`);
   }
 }
+
+module.exports = {
+  EmailNotification,
+  SMSNotification,
+  PushNotification,
+};
